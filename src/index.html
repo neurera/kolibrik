@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="sk"><head><meta charset="utf-8"><title>Kníhkupectvo Kolibrík – košík</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:640px;margin:2rem auto;padding:0 1rem;color:#1c1c1c}
+h1{font-size:1.4rem}table{width:100%;border-collapse:collapse}td,th{padding:.5rem;border-bottom:1px solid #ddd;text-align:left}
+input,button{font:inherit;padding:.4rem .6rem}button{cursor:pointer}
+.total{font-size:1.3rem;font-weight:700}.msg{color:#0a7d4f}.err{color:#b3261e}
+</style></head><body>
+<h1>Kníhkupectvo Kolibrík</h1>
+<table id="cart"><thead><tr><th>Kniha</th><th>Cena</th><th>Ks</th><th></th></tr></thead><tbody></tbody></table>
+<p><button id="add-1" data-id="1">+ Testovanie softvéru (10,00 €)</button>
+<button id="add-2" data-id="2">+ Playwright v praxi (25,00 €)</button></p>
+<p><label>Zľavový kód <input id="code" placeholder="napr. STUDENT"></label> <button id="apply">Použiť</button> <span id="code-msg"></span></p>
+<p>Medzisúčet: <span id="subtotal">0,00 €</span><br>Zľava: <span id="discount">0,00 €</span></p>
+<p class="total">Spolu: <span id="total">0,00 €</span></p>
+<script src="cart.js"></script>
+</body></html>
